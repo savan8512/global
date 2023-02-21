@@ -1,0 +1,440 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .js-nav {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 2em;
+  }
+ h1{
+    margin-top: -3px !important;
+ } 
+  
+  .StreamsHero-image {
+    /* Wave Color */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59adeb+0,42c2b5+52,34ce93+100 */
+    background: #59adeb;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#59adeb', endColorstr='#34ce93', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-size: 350% 350%;
+    animation: waveColors 8s ease infinite;
+    /* End Wave Color */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .StreamsHero-header {
+    color: #fff;
+    font-weight: 200;
+    line-height: 48px;
+    margin-bottom: -5px;
+    font-size: 32px;
+  }
+  
+  .StreamsHero-blurb {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 28px;
+    opacity: .7;
+    -ms-filter: "alpha(opacity=70)";
+    transition: opacity 300ms linear;
+    padding-bottom: 2em;
+  }
+  
+  
+  /* Buttons */
+  
+  .Button {
+    -webkit-appearance: none;
+    background: transparent;
+    border-color: currentcolor;
+    border-style: solid;
+    border-width: 1px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font: inherit;
+    line-height: normal;
+    margin: 0;
+    padding: .4em .75em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: normal;
+  }
+  
+  .StreamsHero-buttonContainer {
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    text-align: right;
+    width: 95%;
+  }
+  
+  .StreamsHero-buttonContainer .Button {
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 35px;
+  }
+  
+  .StreamsHero-buttonContainer .Button.StreamsLogin {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;
+  }
+  
+  .StreamsHero-buttonContainer .Button:hover,
+  .StreamsHero-buttonContainer .Button:focus {
+    background: #fff;
+    color: #1da1f2;
+  }
+  
+  
+  /* Animation Wave Color */
+  
+  @-webkit-keyframes waveColors {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+  }
+  
+  @keyframes waveColors {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+  }
+  .box{
+    margin-top: 100px;
+  }
+  .responsive-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .responsive-box {
+    display: flex;
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #d7dfdc;
+    border-radius: 10px;
+  }
+  
+  .left-side {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .left-side img {
+    width: 100%;
+  }
+  
+  .right-side {
+    width: 40%;
+    vertical-align:bottom;
+    padding-left: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-container {
+      flex-direction: column;
+      width: 90%;
+      overflow: hidden;
+      align-items: center;
+    }
+    .responsive-box {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  .image{
+    margin-top: 40px;
+    padding: 2px;
+  }
+  @media (max-width: 768px) {
+    .responsive-box {
+      display: inline-block;
+    }
+}
+@media (max-width: 768px) {
+    .right-side {
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .image {
+     margin-top: 0px;
+    }
+}
+@media (max-width: 768px) {
+  .left-side {
+    width: 100%;
+  }
+}
+
+
+.card-container {
+  margin: 10px;
+  display: flex;
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
+  white-space: nowrap;
+}
+  .card-container ::-webkit-scrollbar {
+    display: none;
+  }
+
+.card {
+  width: 35%;
+  display: inline-block;
+  height: 300px;
+  text-align: center; 
+  padding-left: 5px;
+}
+.card h2 {
+  padding: 10px;
+  width: 100%;
+  margin-top: 0px !important;
+  word-break: break-all !important;
+  position: relative;
+}
+.card p {
+  padding: 10px;
+  margin-top: 0px !important;
+  word-break: break-all !important;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .card p {
+    width: 35%;
+  /* overflow-x:hidden; */
+  text-overflow: ellipsis !important;
+  word-break: break-all !important;
+  }
+}
+.card img {
+  width: 90%;
+  object-fit: cover;
+  height: auto;
+  display: block;
+  /* margin: 0 auto; */
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+.img_bg{
+  /* background-image: url(https://cdn.downtoearth.org.in/library/large/2019-07-25/0.74587100_1564059132_10.jpg); */
+  width: 100%;
+  object-fit: cover;
+}
+.i-1{
+  width: 292px !important;
+  height: 250px !important;
+}
+
+body{
+  background:#e6e6e6;
+  }
+  #slider{
+  width:80%;
+  margin-top: 00px;
+  /* max-width: 600px; */
+  min-width: 320px;
+  min-height: 200px;
+  position:relative;
+  margin-left: 153px;
+  overflow:hidden;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  }
+  
+  .slide{
+  width:100%;
+  
+  display:none;
+  animation-name:fade;
+  animation-duration:1s;
+  
+  }
+  img{
+  width:100%;
+  height: 100%;
+  }
+  @keyframes fade{
+  from{opacity:0.5;}
+  to{opacity:1;}
+  }
+  
+  .controls{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:1.5em;
+  padding:15px 10px;
+  border-radius:5px;
+  color: white;
+  
+  }
+  
+  .controls:hover{
+  /* background:white; */
+  color: #ccc;
+  transition:0.3s;
+  }
+  
+  .controls:active{
+  color:rgb(255, 255, 255);
+  }
+  
+  #left-arrow{
+  left:10px;
+  }
+  
+  #right-arrow{
+  right:10px;
+  }
+  
+  #dots-con{
+  
+  text-align:center;
+  }
+  .dot{
+  display:inline-block;
+  background:rgb(255, 255, 255);
+  padding:8px;
+  border-radius:50%;
+  margin:10px 5px;
+  }
+  
+  .active{
+  background:rgb(7, 67, 213);
+  }
+  
+  @media (max-width:576px){
+  #slider{min-height: 200px;
+  
+  }
+  
+  .controls{
+    font-size:1em;
+  }
+  
+  #dots-con{
+    display:none;
+  }
+  }
+
+.heading{
+  text-align: center;
+}
+
+@media (max-width:1440px){
+  #slider{
+    min-width: 200px;
+    width: 70%;
+    margin-left: 207px;
+  
+  }
+}
+@media (max-width:768px){
+  #slider{
+    min-width: 200px;
+    margin-left: 33px;
+  
+  }
+}
+@media (max-width:400px){
+  #slider{
+    min-width: 100px;
+    margin-left: -1px;
+    width: 100%;
+  
+  }
+}
+@media (max-width:1440px){
+  .heading{
+    margin-top: 40px;
+  
+  }
+}
+@media (max-width:1440px){
+  .left-side{
+    width: 50%;
+    height: 100%;
+  
+  }
+}
+@media (max-width:768px){
+  .left-side{
+    display: contents;
+  
+  }
+}
+.responsive-box1 {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #d7dfdc;
+  border-radius: 10px;
+}
+@media (max-width:768px){
+  #responsive-box1{
+    width: 45%;
+  
+  }
+}
